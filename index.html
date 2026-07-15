@@ -1,168 +1,283 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="style.css">
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SSK Travels And Hospitality</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    line-height:1.6;
+    color:#333;
+}
+
+/* Header */
+header{
+    background:#0A4D68;
+    color:white;
+    padding:15px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#FFD93D;
+}
+
+/* Hero */
+.hero{
+    height:80vh;
+    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+    url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-content h1{
+    font-size:50px;
+    margin-bottom:15px;
+}
+
+.hero-content p{
+    font-size:20px;
+    margin-bottom:20px;
+}
+
+.btn{
+    background:#FFD93D;
+    color:#000;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+/* Sections */
+section{
+    padding:70px 10%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:36px;
+    color:#0A4D68;
+}
+
+/* Cards */
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#f9f9f9;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0px 5px 15px rgba(0,0,0,0.1);
+    text-align:center;
+}
+
+.card h3{
+    margin-bottom:10px;
+    color:#0A4D68;
+}
+
+/* About */
+.about{
+    background:#f4f8fb;
+    text-align:center;
+}
+
+/* Contact */
+.contact{
+    text-align:center;
+}
+
+.contact p{
+    margin:10px 0;
+    font-size:18px;
+}
+
+/* Footer */
+footer{
+    background:#0A4D68;
+    color:#fff;
+    text-align:center;
+    padding:25px;
+}
+
+footer a{
+    color:#FFD93D;
+    text-decoration:none;
+}
+
+@media(max-width:768px){
+    header{
+        flex-direction:column;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+        margin-top:10px;
+    }
+
+    nav ul li{
+        margin:10px;
+    }
+
+    .hero-content h1{
+        font-size:35px;
+    }
+}
+</style>
 </head>
+
 <body>
 
+<!-- Header -->
 <header>
-    <div class="container">
+    <div class="logo">SSK Travels And Hospitality</div>
 
-        <div class="logo">
-            logo.png Hospitality Logo">
-            <div class="logo-text">
-                <h2>SSK Travels</h2>
-                <span>And Hospitality</span>
-            </div>
-        </div>
-
-        <nav>
-            <ul>
-                <li>#home</li>
-                <li>#services</li>
-                <li><a>#Destinations</a></li>
-                <li><a>#Contact</a></li>
-            </ul>
-        </nav>
-
-    </div>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a>li>#offering></li>
+            <li>#packages></li>
+            <li>">Contact Us</a></li>
+            <li>about">About Us</a></li>
+        </ul>
+    </nav>
 </header>
 
+<!-- Hero Section -->
 <section class="hero" id="home">
     <div class="hero-content">
-        <h1>Explore The Beauty Of North Bengal & Sikkim</h1>
-        <p>
-            Group Tours • Custom Itineraries • Cab Services
-        </p>
-
-        https://wa.me/917001155911" class="btn">
-            Book On WhatsApp
-        </a>
+        <h1>Explore The World With SSK Travels</h1>
+        <p>Your Trusted Travel Partner For Memorable Journeys</p>
+        #packagesbtn">View Packages</a>
     </div>
 </section>
 
-<section class="about">
-    <div class="container">
-        <h2>Welcome To SSK Travels And Hospitality</h2>
+<!-- Offering -->
+<section id="offering">
+    <h2 class="section-title">Our Offerings</h2>
 
-        <p>
-            We specialize in memorable travel experiences across
-            Darjeeling, Kalimpong, Dooars and Sikkim. Whether you're planning
-            a family vacation, honeymoon trip, corporate tour or group
-            excursion, we provide reliable transportation, customized tour
-            packages and personalized hospitality.
-        </p>
-    </div>
-</section>
-
-<section id="services" class="services">
-    <h2>Our Services</h2>
-
-    <div class="service-grid">
-
+    <div class="cards">
         <div class="card">
-            <h3>Group Tours</h3>
-            <p>
-                Carefully planned tours for families, schools,
-                corporates and travel enthusiasts.
-            </p>
+            <h3>Flight Booking</h3>
+            <p>Domestic and international flight reservations at competitive prices.</p>
         </div>
 
         <div class="card">
-            <h3>Custom Itineraries</h3>
-            <p>
-                Personalized travel plans built around
-                your budget and preferences.
-            </p>
+            <h3>Hotel Booking</h3>
+            <p>Luxury, business and budget accommodations worldwide.</p>
         </div>
 
         <div class="card">
-            <h3>Cab Services</h3>
-            <p>
-                Comfortable vehicles with experienced drivers
-                across North Bengal and Sikkim.
-            </p>
+            <h3>Customized Tours</h3>
+            <p>Personalized holiday experiences tailored to your preferences.</p>
         </div>
 
+        <div class="card">
+            <h3>Corporate Travel</h3>
+            <p>Professional travel solutions for businesses and organizations.</p>
+        </div>
     </div>
 </section>
 
-<section id="destinations" class="destinations">
+<!-- Packages -->
+<section id="packages">
+    <h2 class="section-title">Popular Packages</h2>
 
-    <h2>Popular Destinations</h2>
-
-    <div class="destination-grid">
-
-        <div class="destination">
-            https://images.unsplash.com/photo-1518684079-3c830dcef090?w=800
-            <h3>Darjeeling</h3>
+    <div class="cards">
+        <div class="card">
+            <h3>Goa Beach Escape</h3>
+            <p>4 Days / 3 Nights</p>
+            <p>Starting ₹12,999</p>
         </div>
 
-        <div class="destination">
-            1785888041-af3ef285b470?w=800" alt="">
-            <h3>Kalimpong</h3>
+        <div class="card">
+            <h3>Himachal Adventure</h3>
+            <p>6 Days / 5 Nights</p>
+            <p>Starting ₹18,999</p>
         </div>
 
-        <div class="destination">
-            https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800
-            <h3>Dooars</h3>
+        <div class="card">
+            <h3>Dubai Delight</h3>
+            <p>5 Days / 4 Nights</p>
+            <p>Starting ₹45,999</p>
         </div>
-
-        <div class="destination">
-            https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=800
-            <h3>Sikkim</h3>
-        </div>
-
     </div>
-
 </section>
 
-<section class="why-us">
+<!-- About -->
+<section class="about" id="about">
+    <h2 class="section-title">About Us</h2>
 
-    <h2>Why Choose Us?</h2>
-
-    <div class="features">
-        <div>✅ Local Expertise</div>
-        <div>✅ Affordable Packages</div>
-        <div>✅ Trusted Cab Network</div>
-        <div>✅ Customized Travel Planning</div>
-        <div>✅ 24×7 Support</div>
-        <div>✅ Experienced Drivers</div>
-    </div>
-
+    <p>
+        SSK Travels And Hospitality is dedicated to providing unforgettable
+        travel experiences. From holiday packages and hotel bookings to
+        customized international tours, we help travelers discover the world
+        with comfort, safety, and confidence.
+    </p>
 </section>
 
-<section class="testimonial">
+<!-- Contact -->
+<section class="contact" id="contact">
+    <h2 class="section-title">Contact Us</h2>
 
-    <h2>What Our Guests Say</h2>
-
-    <div class="review">
-        ⭐⭐⭐⭐⭐ <br>
-        "Excellent service and perfectly arranged Darjeeling trip."
-        <br><strong>- Amit Kumar</strong>
-    </div>
-
-</section>
-
-<section id="contact" class="contact">
-
-    <h2>Contact Us</h2>
-
-    <p>📍North Bengal Operations</p>
-    <p>📞 +91 7001155911</p>
+    <p><strong>SSK Travels And Hospitality</strong></p>
+    <p>📍 Kolkata, West Bengal, India</p>
+    <p>📞 +91 XXXXX XXXXX</p>
     <p>✉ info@ssktravels.com</p>
-
-    https://wa.me/91XXXXXXXXXX
-
 </section>
 
+<!-- Footer -->
 <footer>
     <p>
-        © 2026 SSK Travels And Hospitality.
-        All Rights Reserved.
+        © 2026 SSK Travels And Hospitality. All Rights Reserved.
+    </p>
+    <p>
+        Discover • Explore • Experience
     </p>
 </footer>
 
